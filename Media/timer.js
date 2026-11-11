@@ -1,7 +1,11 @@
 let min = 0;
 let sec = 0;
 let charge = 50;
+let interval;
 function timer(timerField, gasoline, gasolineWidth) {
+    if (charge <= 1) {
+        clearInterval(interval);
+    }
     sec += 1;
     charge -= 1;
     if (sec >= 60) {
@@ -26,5 +30,5 @@ function timer(timerField, gasoline, gasolineWidth) {
 }
 
 function startTimer(timerField, gasoline, gasolineWidth) {
-    setInterval(timer, 1000, timerField, gasoline, gasolineWidth);
+    interval = setInterval(timer, 1000, timerField, gasoline, gasolineWidth);
 }

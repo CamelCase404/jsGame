@@ -131,7 +131,7 @@ body {
 
 .gasoline-value {
     height: 100%;
-    width: 100%;
+    width: 50%;
     background-color: #00b341;
     transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -324,4 +324,21 @@ body {
     width: 50px;
     background-image: url("../img/wall.png");
     background-size: cover;
+}
+
+@keyframes startAnim {
+    to {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
+
+.EnterYourName {
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: startAnim 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#player {
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }

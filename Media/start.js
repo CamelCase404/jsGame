@@ -3,6 +3,7 @@ const btnStart = document.getElementById("buttonStart");
 const wrap = document.getElementById("startWindow");
 let playerName = undefined;
 let checked = false;
+
 function checkSymbs(input) {
     if (input.value.length >= 1) {
         return true;

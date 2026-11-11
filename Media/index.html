@@ -14,7 +14,7 @@
             <div class="modal modal-rules" id="startWindow">
                 <div class="modal-wrap">
                     <div class="modal-title-border flex-row flex-sb flex-aic">
-                        <h2>Напишите ваше имя</h2>
+                        <h2 class="EnterYourName">Напишите ваше имя</h2>
                     </div>
                     <br />
                     <form action="#">
@@ -23,9 +23,10 @@
                             name="name"
                             id="username"
                             maxlength="5"
+                            class="EnterYourName"
                         />
                         <div class="btn btn-start" id="buttonStart">
-                            <p>Начать игру</p>
+                            <p class="EnterYourName">Начать игру</p>
                             <div class="btn-ripple"></div>
                         </div>
                     </form>
@@ -57,7 +58,7 @@
             <div class="panel-left flex-col flex-aic">
                 <p id="username-block" class="smart-font-size">name</p>
                 <div id="gasoline-count">
-                    <div class="gasoline-number">100</div>
+                    <div class="gasoline-number">50</div>
                     <div class="gasoline-value"></div>
                 </div>
                 <div id="timer">
@@ -107,6 +108,7 @@
         </div>
         <!-- game end -->
         <script src="start.js"></script>
+        <script src="game.js"></script>
         <script src="timer.js"></script>
         <script src="script.js"></script>
     </body>
